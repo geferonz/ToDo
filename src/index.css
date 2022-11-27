@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.popup-overlay {
+  background: #00000080;
+}
+
+.popup-content  {
+  width: 600px;
+}

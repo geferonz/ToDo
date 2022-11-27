@@ -1,0 +1,18 @@
+.filters {
+  margin-bottom: 24px;
+  display: inline-flex;
+  gap: 16px;
+}
+
+.filters button {
+  background: unset;
+  color: inherit;
+}
+
+.filters .active {
+  background-color: #edf2f7;
+}
+
+.filters button:hover {
+  background-color: #edf2f7;
+}

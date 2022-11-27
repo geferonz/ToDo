@@ -1,0 +1,24 @@
+.add {
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 6px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.add input {
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  padding: 0 16px;
+  width: calc(100% - 32px);
+  height: 46px;
+  border-radius: 6px;
+  border: 2px solid #00000000;
+  background: #edf2f7;
+}
+
+.add input:focus {
+  background: #00000000;
+  border-color: rgb(49, 130, 206);
+}
