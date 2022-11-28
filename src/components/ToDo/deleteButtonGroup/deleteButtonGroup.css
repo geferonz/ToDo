@@ -1,5 +1,13 @@
 .delete {
   display: flex;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   gap: 8px;
+}
+
+.delete button {
+  flex-shrink: 0;
+}
+
+.contain {
+  width: 100%;
 }
