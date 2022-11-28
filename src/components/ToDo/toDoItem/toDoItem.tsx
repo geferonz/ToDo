@@ -16,12 +16,11 @@ interface Props {
   handleCheck: () => void;
   todoItem: ToDoType;
   deleteItem: () => void;
-  editItem: (item: ToDoType) => void;
+  editItem: (item: ToDoType, id?: string) => void;
 }
 
 function ToDoItem({ handleCheck, todoItem, deleteItem, editItem }: Props) {
   const [item, setItem] = React.useState<ToDoType>(todoItem);
-
   /**
    * File download link emulation function
    */
@@ -57,7 +56,7 @@ function ToDoItem({ handleCheck, todoItem, deleteItem, editItem }: Props) {
               date: item.date,
               fileUrl: url,
               fileName: item.file!.name,
-            });
+            }, todoItem.id);
           });
         }
       );
@@ -69,7 +68,7 @@ function ToDoItem({ handleCheck, todoItem, deleteItem, editItem }: Props) {
         date: item.date,
         fileUrl: item.fileUrl,
         fileName: item.fileName,
-      });
+      }, todoItem.id);
     }
 
     close();

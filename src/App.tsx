@@ -128,7 +128,7 @@ function App() {
                       todoItem={item}
                       handleCheck={handleCheck}
                       deleteItem={() => deleteToDo(item.id)}
-                      editItem={(item: ToDoType) => editToDo(item, item.id)}
+                      editItem={editToDo}
                     />
                     {index < filtered.length - 1 ? <Divider /> : null}
                   </div>
