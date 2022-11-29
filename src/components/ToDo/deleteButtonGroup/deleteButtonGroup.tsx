@@ -60,7 +60,6 @@ function DeleteButtonGroup({ todo }: Props) {
 
   return (
     <div className="delete">
-      <div className="contain" />
       <Button type="button" onClick={deleteAll}>
         Delete all
       </Button>

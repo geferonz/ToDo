@@ -1,7 +1,5 @@
 .filters {
   margin-bottom: 24px;
-  display: inline-flex;
-  gap: 16px;
 }
 
 .filters button {
